@@ -22,7 +22,7 @@
 # - Grouped by: Days after application (14, 28, 42 DAA)
 #
 # DATA FILES REQUIRED:
-# - data/Complete_data_r_format.xlsx (weed control data)
+# - data/weed_control.xlsx (weed control data)
 # - data/soy_para.xlsx (crop injury data)
 #
 # OUTPUT:
@@ -62,7 +62,7 @@ set.seed(123)
 
 # Import weed control data
 # Sheet 1 ("weed") contains weed control observations across all site-years
-raw_data <- read_excel("data/Complete_data_r_format.xlsx", sheet = 1)
+raw_data <- read_excel("data/weed.control.xlsx", sheet = 1)
 
 # Import crop injury data
 soy_data <- read_excel("data/soy_para.xlsx", sheet = 1)
